@@ -14,23 +14,19 @@ import {
 const Workers = () => {
   return (
     <div className="w-full p-10 justify-center items-center flex relative text-black">
-      <div className="w-full flex justify-between items-center top-10 relative overflow-hidden gap-10 h-[100vh]">
+      <div className="w-full flex justify-between items-center relative h-[80vh] overflow-hidden gap-10">
         <Image
           src={AiImage1}
           alt="ai"
-          height={1184}
-          width={950}
-          className=" flex-[.5] max-h-full object-cover rounded-lg shadow-lg"
+          className=" w-1/2 flex-[.5] max-h-full object-cover rounded-lg shadow-lg h-[90%]"
         />
         <Image
           src={AiImage2}
           alt="ai-2"
-          height={1184}
-          width={950}
-          className="w-1/2 flex-[.5] max-h-full rounded-lg object-cover shadow-lg"
+          className="w-1/2 flex-[.5] max-h-full rounded-lg object-cover shadow-lg h-[90%]"
         />
       </div>
-      <div className="hidden xl:block absolute bottom-[-1rem] left-[40%] bg-white opacity-95 shadow-lg space-y-8 p-5 rounded-md w-1/2">
+      <div className="hidden xl:block absolute bottom-5 left-[40%] bg-white opacity-95 shadow-lg space-y-8 p-5 rounded-md w-1/2">
         <h1 className="flex items-center font-semibold gap-2  ">
           <Video /> Recent Alerts
         </h1>
@@ -97,17 +93,17 @@ const Workers = () => {
           </tbody>
         </table>
       </div>
-      <div className="hidden xl:block absolute top-12 left-[1rem] space-y-2 shadow-lg">
-        <div className="bg-white opacity-95 flex items-center gap-2 font-semibold p-3 rounded-sm shadow-lg">
-          <TriangleAlert />
+      <div className="hidden xl:block absolute bottom-3 left-[1rem]  space-y-2 ">
+        <div className="bg-white opacity-95 flex items-center gap-2 font-semibold p-2 rounded-sm shadow-lg text-sm">
+          <TriangleAlert size={12}/>
           Alert Configuration
         </div>
-        <div className="bg-white opacity-95 flex items-center gap-2 font-semibold p-3 rounded-sm shadow-lg">
-          <ChartColumnBig size={15} />
+        <div className="bg-white opacity-95 flex items-center gap-2 font-semibold p-2 rounded-sm shadow-sm text-sm">
+          <ChartColumnBig size={12} />
           Analytics
         </div>
       </div>
-      <div className="bg-white p-3  xl:block rounded-lg w-64 absolute shadow-lg opacity-95 top-4 right-20 border-sm border-gray-50 flex justify-start flex-col">
+      <div className="bg-white p-3  xl:block rounded-lg w-64 absolute shadow-lg opacity-95 top-4 left-20 border-sm border-gray-50 flex justify-start flex-col">
         <h1 className="font-semibold text-left text-xs ">Camera</h1>
         <div className="flex flex-row gap-1 text-lg  items-center font-semibold">
           <MapPin size={18} />

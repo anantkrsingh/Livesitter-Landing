@@ -1,18 +1,26 @@
 import React from "react";
 import AiImage from "@/app/assets/ai1.webp";
 import Image from "next/image";
-import { Baby, ChartColumnBig, Clock, MapPin, TriangleAlert, UserRound, Video } from "lucide-react";
+import {
+  Baby,
+  ChartColumnBig,
+  Clock,
+  MapPin,
+  TriangleAlert,
+  UserRound,
+  Video,
+} from "lucide-react";
 const Child = () => {
   return (
     <div className="w-full p-10 justify-center items-center flex relative text-black ">
-      <Image
-        src={AiImage}
-        alt=""
-        className=" rounded-lg shadow-lg"
-        width={1920}
-        height={1184}
-      />
-      <div className="hidden xl:block absolute bottom-0 left-20 bg-white opacity-95 shadow-lg space-y-8 p-5 rounded-md w-1/2">
+      <div className="h-[80vh] w-full">
+        <Image
+          src={AiImage}
+          alt=""
+          className=" rounded-lg shadow-lg h-[90%] object-cover w-full"
+        />
+      </div>
+      <div className="hidden xl:block absolute bottom-10 left-20 bg-white opacity-95 shadow-lg space-y-8 p-5 rounded-md w-1/2">
         <h1 className="flex items-center font-semibold gap-2  ">
           <Video /> Recent Alerts
         </h1>
@@ -35,13 +43,13 @@ const Child = () => {
               </td>
               <td>
                 <span className="flex items-center gap-1">
-                  <MapPin/>
+                  <MapPin />
                   Classroom C8
                 </span>
               </td>
               <td>
                 <span className="flex items-center gap-1 text-red-600">
-                  <Clock/>
+                  <Clock />
                   15 min 14 sec
                 </span>
               </td>
@@ -51,13 +59,13 @@ const Child = () => {
               <td>Yesterday,5:21 pm</td>
               <td>
                 <span className="flex items-center gap-1">
-                  <MapPin/>
+                  <MapPin />
                   Classroom C8
                 </span>
               </td>
               <td>
                 <span className="flex items-center gap-1">
-                  <Clock/>
+                  <Clock />
                   20 sec
                 </span>
               </td>
@@ -67,13 +75,13 @@ const Child = () => {
               <td>July 24,2:05 pm</td>
               <td>
                 <span className="flex items-center gap-1">
-                  <MapPin/>
+                  <MapPin />
                   Classroom C8
                 </span>
               </td>
               <td>
                 <span className="flex items-center gap-1">
-                  <Clock/>
+                  <Clock />
                   12 sec
                 </span>
               </td>
@@ -83,11 +91,11 @@ const Child = () => {
       </div>
       <div className="hidden xl:block absolute top-12 left-[1rem] space-y-2">
         <div className="bg-white opacity-95 flex items-center gap-2 font-semibold p-3 rounded-sm shadow-lg">
-          <TriangleAlert/>
+          <TriangleAlert />
           Alert Configuration
         </div>
         <div className="bg-white opacity-95 flex items-center gap-2 font-semibold p-3 rounded-sm shadow-lg">
-          <ChartColumnBig/>
+          <ChartColumnBig />
           Analytics
         </div>
       </div>
